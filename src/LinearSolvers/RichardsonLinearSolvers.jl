@@ -11,7 +11,7 @@
   This gives flexiblity in relaxation.  
 """
 struct RichardsonLinearSolver<:Gridap.Algebra.LinearSolver
-    ω::Union{Vector{Float64},Float64}
+    ω::Union{AbstractVector{Float64},Float64}
     Pl::Union{Gridap.Algebra.LinearSolver,Nothing}
     log::ConvergenceLog{Float64}
 end
